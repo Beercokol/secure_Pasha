@@ -1,0 +1,72 @@
+:root{
+  background-color: #c9c9c9;
+  font: 1.2em "Fira Sans", sans-serif;
+  font-weight: bold;
+}
+.App {
+  display: flex;
+  max-width: 70%;
+  margin: auto;
+  white-space: pre-wrap;
+  flex-direction: column;
+  position: relative;
+  background-color: #d8d9e6;
+  height: 100vh;
+
+}
+.content_block {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  overflow: auto;
+  border: 1px solid gray;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  font-weight: lighter;
+  border-radius: 1rem;
+}
+.content_block b h3 {
+  text-align: center;
+}
+
+.input_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-width: 20%;
+margin: 1rem auto;
+}
+.input_container select {
+  min-width: 250px;
+  width: 20%;
+  font-weight: 700;
+  font-size: 16px;
+  height: 1.5rem;
+  border-radius: .5rem;
+  border: 2px solid #c9c9c9;
+  color: #525252;
+  background-color: #ebebeb;
+}
+
+.submit_button {
+  width: 7rem;
+  height: 1.5rem;
+  background-color: blue;
+  color: #ebebeb;
+  border: none;
+  border-radius: .5rem;
+}
+
+.main_form {
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.button_container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
