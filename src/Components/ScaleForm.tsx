@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {useForm} from "react-hook-form";
 import {calcInfoLevelWithScale, getInfoString} from "../utils";
-import {finalObjestInfo} from "../Constants";
+import {finalInfoMap} from "../Constants";
 import "../App.css"
 
 export const ScaleForm: React.FC<{secureLevel: string}> = ({secureLevel}) => {
@@ -23,7 +23,7 @@ export const ScaleForm: React.FC<{secureLevel: string}> = ({secureLevel}) => {
 
             </div>
         </form>
-            {finalInfo && <><h3>{getInfoString(finalInfo)}</h3> <div>{finalObjestInfo[1]}</div></>}
+            {finalInfo && <><h3>{getInfoString(finalInfo)}</h3> <div>{finalInfo && finalInfoMap.get(finalInfo)}</div></>}
 
         </>
     )
